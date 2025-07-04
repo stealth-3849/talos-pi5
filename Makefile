@@ -7,7 +7,7 @@ REGISTRY_USERNAME ?= ograff
 
 TAG ?= $(shell git describe --tags --exact-match)
 
-EXTENSIONS ?= --system-extension-image=ghcr.io/siderolabs/tailscale:1.82.5@sha256:84e12fb6e84f6f83a1711655f723fc60185c0adb38cb76d08416ea4a84e12cd9 --system-extension-image=ghcr.io/siderolabs/iscsi-tools:v0.2.0@sha256:f2d78a7f19d301f2bf88ec99d948ffc63778125ce3acb0146049b75ed7ecd18c --system-extension-image=ghcr.io/siderolabs/util-linux-tools:2.40.4@sha256:f305315aec4fe0a355fb933c919a25550c67785acb193ee2842784317b5fa66b
+EXTENSIONS ?= --system-extension-image=ghcr.io/siderolabs/tailscale:1.84.0@sha256:d3603fbf5037862174416831267059cf24a6b80e9ba12792da69d8f2d349cc98 --system-extension-image=ghcr.io/siderolabs/iscsi-tools:v0.2.0@sha256:ead7d05a63a7b9e1ce3fd8b4b88ab301ee3d236549972f9bb83583a799a01366 --system-extension-image=ghcr.io/siderolabs/util-linux-tools:2.40.4@sha256:bcaf485539d7d07ee2988d1f189df74c54f8ad818017bcebe88207618e54b86c
 
 PKG_REPOSITORY = https://github.com/siderolabs/pkgs.git
 TALOS_REPOSITORY = https://github.com/siderolabs/talos.git
