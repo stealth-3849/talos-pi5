@@ -3,11 +3,11 @@ TALOS_VERSION = v1.10.4
 SBCOVERLAY_VERSION = main
 
 REGISTRY ?= ghcr.io
-REGISTRY_USERNAME ?= ograff
+REGISTRY_USERNAME ?= stealth-3849
 
 TAG ?= $(shell git describe --tags --exact-match)
 
-EXTENSIONS ?= --system-extension-image=ghcr.io/siderolabs/tailscale:1.84.0@sha256:d3603fbf5037862174416831267059cf24a6b80e9ba12792da69d8f2d349cc98 --system-extension-image=ghcr.io/siderolabs/iscsi-tools:v0.2.0@sha256:ead7d05a63a7b9e1ce3fd8b4b88ab301ee3d236549972f9bb83583a799a01366 --system-extension-image=ghcr.io/siderolabs/util-linux-tools:2.40.4@sha256:bcaf485539d7d07ee2988d1f189df74c54f8ad818017bcebe88207618e54b86c
+EXTENSIONS ?= --system-extension-image=ghcr.io/siderolabs/iscsi-tools:v0.2.0@sha256:ead7d05a63a7b9e1ce3fd8b4b88ab301ee3d236549972f9bb83583a799a01366 --system-extension-image=ghcr.io/siderolabs/util-linux-tools:2.40.4@sha256:bcaf485539d7d07ee2988d1f189df74c54f8ad818017bcebe88207618e54b86c
 
 PKG_REPOSITORY = https://github.com/siderolabs/pkgs.git
 TALOS_REPOSITORY = https://github.com/siderolabs/talos.git
